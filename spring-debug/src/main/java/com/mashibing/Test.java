@@ -38,9 +38,10 @@ public class Test {
 //
 ////        MyClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("factoryMethod.xml");
 //
-////        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("test.xml");
-////        Person person = ac.getBean("person", Person.class);
-////        ac.close();
+        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("test.xml");
+        Person person = ac.getBean("person", Person.class);
+		System.out.println(person);
+        //        ac.close();
 ////        Person person2 = ac.getBean("person", Person.class);
 //
 ////        ApplicationContext ac = new ClassPathXmlApplicationContext("person.xml");
@@ -58,9 +59,9 @@ public class Test {
 //        A a = new A();
 //        B b = new B();
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test.xml");
-        Student bean = context.getBean(Student.class);
-        context.close();
+//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test.xml");
+//        Student bean = context.getBean(Student.class);
+//        context.close();
 
         //想通过student获取其他bean对象怎么办？
 
