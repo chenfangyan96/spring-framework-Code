@@ -41,6 +41,7 @@ public class Test {
         ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("test.xml");
         Person person = ac.getBean("person", Person.class);
 		System.out.println(person);
+        System.out.println(person.getName());
         //        ac.close();
 ////        Person person2 = ac.getBean("person", Person.class);
 //
